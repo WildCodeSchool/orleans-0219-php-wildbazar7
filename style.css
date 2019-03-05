@@ -1,3 +1,7 @@
+.jumbotron {
+    background-color:transparent !important; 
+}
+
 .logo_footer{
     width:140px; 
     height: auto;
@@ -7,52 +11,52 @@ ul{
 }
 .container-fluid
 {
-background-color:#52555D;
+    background-color:#52555D;
 
 }
-.lead
-{
-font-style: italic;
-text-align: center;
+.lead{
+    font-style: italic;
+    text-align: center;
 }
 .display-4
 {
-text-align: center;
+    text-align: center;
 }
 
 .navbar
 {  
-font-size: 18px;
-margin-left: 50px;
+    font-size: 18px;
+    margin-left: 50px;
 }   
 .nav-link
 {
-color:black;
+    color:black;
 }
 h2
 {
-text-align: center;
+    text-align: center;
 }
 
 .title
 {
-text-align: center;
-margin-bottom: 30px;
-font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
 }
 
 
 
-.row
-{
-
-justify-content: 
+@font-face{
+    font-family: "main";
+    src: url("assets/fonts/11.otf");
 }
-
 
 *{
     font-size: 0.98em;
+    font-family: 'main';
 }
+
+
 
 .topsell-card-margin{
     margin-left: 25px !important;
@@ -101,8 +105,20 @@ p{
     height: 200px;
     border: 3px solid black;
     margin: 25px;
+    transition: .5s ease-in-out;
 }
 
+.diamond:hover{
+    transform: rotate(0deg);
+}
+
+.diamond > a > img{
+    transition: .5s ease-in-out;
+}
+
+.diamond:hover > a > img{
+    transform: rotate(-45deg);
+}
 .cat-titles{
     font-size: 160%;
 }
@@ -113,5 +129,10 @@ p{
 
 .mb-minus-10{
     margin-bottom: -10px;
+}
+
+.main-title{
+    width: 40%;
+    border: 3px solid black;
 }
 
