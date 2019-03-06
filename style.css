@@ -1,6 +1,6 @@
 .jumbotron {
     background-color:transparent !important; 
-    background-image: url('assets/background-title2.png');
+    background-image: url('assets/crossline-lines.png');
     background-size: cover;
     border-bottom: 1px solid black;
 }
@@ -272,4 +272,12 @@ background-color: black;
 }
 .color-navbar{
     color: white;
+}
+.logoabt{
+
+    position: relative;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 130px;
+    
 }
