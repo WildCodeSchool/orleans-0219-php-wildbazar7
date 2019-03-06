@@ -4,7 +4,7 @@ body{
 
 .jumbotron {
     background-color:transparent !important; 
-    background-image: url('assets/background-title2.png');
+    background-image: url('assets/crossline-lines.png');
     background-size: cover;
     border-bottom: 1px solid black;
 }
@@ -78,16 +78,6 @@ input, textarea{
 {
     text-align: center;
 }
-
-.navbar
-{  
-    font-size: 18px;
-    margin-left: 50px;
-}   
-.nav-link
-{
-    color:black;
-}
 h2
 {
     text-align: center;
@@ -159,7 +149,9 @@ p{
     max-width: 160px;
     transform: rotate(45deg);
 }
-
+.img-logo-resize{
+    max-width: 45px;
+}
 .diamond{
     
     transform: rotate(-45deg);
@@ -267,4 +259,30 @@ p{
     border: 1px solid black;
     border-radius: 0px;
 }
+.container-fluid{
+background-color: black;
+}
+a:hover{
+    color: white;
+}
+.dropdown-menu{
+background-color: black;
+}
 
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.color-navbar{
+    color: white;
+}
+.logoabt{
+
+    position: relative;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 130px;
+    
+}
