@@ -1,3 +1,7 @@
+body{
+    background-image: url("assets/skin_side_up.png");
+}
+
 .jumbotron {
     background-color:transparent !important; 
     background-image: url('assets/background-title2.png');
@@ -157,6 +161,7 @@ p{
 }
 
 .diamond{
+    
     transform: rotate(-45deg);
     width: 200px;
     height: 200px;
