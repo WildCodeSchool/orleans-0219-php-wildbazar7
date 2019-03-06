@@ -1,0 +1,148 @@
+.jumbotron {
+    background-color:transparent !important; 
+}
+
+.logo_footer{
+    width:140px; 
+    height: auto;
+}
+ul{
+    list-style-type:none; 
+}
+.container-fluid
+{
+    background-color:#52555D;
+
+}
+.lead{
+    font-style: italic;
+    text-align: center;
+}
+.display-4
+{
+    text-align: center;
+}
+h2
+{
+    text-align: center;
+}
+
+.title
+{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+
+
+@font-face{
+    font-family: "main";
+    src: url("assets/fonts/11.otf");
+}
+
+*{
+    font-size: 0.98em;
+    font-family: 'main';
+}
+
+
+
+.topsell-card-margin{
+    margin-left: 25px !important;
+    margin-right: 25px !important;
+}
+
+p{
+    margin-top: unset;
+}
+
+.card-border-c{
+    border: 3px solid black;
+}
+
+.text-stock{
+    position: absolute;
+    bottom: 12px;
+    right: 55px;
+    color: green;
+}
+
+.basket-icon{
+    position: absolute;
+    bottom: 12px;
+    width: 24px;
+}
+
+.text-price{
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 150%;
+}
+
+.card-img-wrap{
+    max-width: 160px;
+}
+
+.img-acc-resize{
+    max-width: 160px;
+}
+.img-logo-resize{
+    max-width: 45px;
+}
+.diamond{
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    margin: 25px;
+    transition: .5s ease-in-out;
+}
+
+.diamond:hover{
+    transform: rotate(0deg);
+}
+
+.diamond > a > img{
+    transition: .5s ease-in-out;
+}
+
+.diamond:hover > a > img{
+    transform: rotate(-45deg);
+}
+.cat-titles{
+    font-size: 160%;
+}
+
+.flex-unset{
+    flex: unset;
+}
+
+.mb-minus-10{
+    margin-bottom: -10px;
+}
+
+.main-title{
+    width: 40%;
+    border: 3px solid black;
+}
+.container-fluid{
+background-color: black;
+}
+a:hover{
+    color: white;
+}
+.dropdown-menu{
+background-color: black;
+}
+
+.custom-toggler .navbar-toggler {
+    border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.color-navbar{
+    color: white;
+}
