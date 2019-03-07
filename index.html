@@ -122,18 +122,20 @@
 		<h2 class="text-center py-3 mt-2 font-weight-bold ---title---">Top Selling</h2>
 		<h5 class="text-center pb-5 font-italic">Top selling products last week</h5>
 			<div class="row justify-content-center">
-				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
-					<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-						<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/pc0.jpg" alt="Card image cap">
-						<div class="card-block pt-2">
-							<h4 class="card-title">Abstract</h4>
-							<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
-							<span><p class="card-text text-stock mr-3"><small>in stock</small></p></span>
-							<span><p class="card-text text-price mr-0">215$</p></span>
-							<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
-						</div>
+					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
+						<a href="#" data-toggle="modal" data-target="#mod1">
+							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/pc0.jpg" alt="Card image cap">
+								<div class="card-block pt-2">
+									<h4 class="card-title">Abstract</h4>
+									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
+									<span><p class="card-text text-stock"><small>in stock</small></p></span>
+									<span><p class="card-text text-price mr-0">25$</p></span>
+									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
+								</div>
+							</div>
+						</a>
 					</div>
-				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 					<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
 						<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/pc0.jpg" alt="Card image cap">
@@ -212,6 +214,47 @@
 								</div>
 							</fieldset>
 						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="mod1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content modal-style">
+				<div class="modal-header modal-header-style">
+					<h5 class="modal-title" id="exampleModalLabel">Abstract</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="cross-style" aria-hidden="true">&#10005;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="container-fluid p-0">
+						<div class="row">
+							<div class="col-md-6 p-0">
+								<div class="modal-img-wrap">
+									<img class="modal-img" src="assets/pc0.jpg" alt="product image">
+								</div>
+							</div>
+							<div class="col-md-6 ml-auto p-0">
+								<div class="modal-text-wrap">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut neque quis orci ullamcorper consectetur. Donec nunc dolor, fermentum in turpis eget, tristique tincidunt justo. Donec porta risus eget rhoncus aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+									<div class="modal-price-wrap">
+										<p class="text-stock-small">in stock</p>
+										<br>
+										<div class="row justify-content-center">
+											<div class="col-3">
+												<p>25$</p>
+											</div>
+											<div class="col-9">
+												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
