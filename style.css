@@ -94,6 +94,11 @@ h2
     font-size: 36px;
 }
 
+.title-no-mb{
+    text-align: center;
+    font-size: 36px;
+}
+
 
 
 @font-face{
@@ -301,4 +306,9 @@ background-color: black;
 
 .text-vw-text{
     font-size: calc(12px + 0.7vw);
+}
+
+.nav-dropdown-style{
+    padding: 0;
+    border-radius: 0px;
 }
