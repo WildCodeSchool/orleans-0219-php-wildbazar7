@@ -312,3 +312,13 @@ background-color: black;
     padding: 0;
     border-radius: 0px;
 }
+
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none!important;
+}
+
+input, textarea{
+    outline: 0;
+    box-shadow: none!important;
+}
