@@ -287,6 +287,11 @@ a:hover{
 .color-navbar{
     color: white;
 }
+.color-navbar:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: black;
+}
 .logoabt{
     position: relative;
     margin-right: 30px;
@@ -312,8 +317,8 @@ a:hover{
 }
 
 .nav-dropdown-style > a:focus{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .btn.focus, .btn:focus {
@@ -337,4 +342,5 @@ input, textarea{
 .shop-cart{
     width: 25px;
 }
+
 
