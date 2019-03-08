@@ -311,6 +311,7 @@ input, textarea{
     color: white;
 }
 
+
 .btn.focus, .btn:focus {
     outline: 0;
     box-shadow: none!important;
@@ -326,5 +327,7 @@ input, textarea{
 .shop-cart{
     width: 25px;
 }
-
+.bg-pp{
+    background-color: white;
+}
 
