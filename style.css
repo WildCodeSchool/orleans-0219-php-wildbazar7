@@ -1,7 +1,52 @@
 body{
     background-image: url('assets/bg_body_3.png');
 }
+ul{
+    list-style-type:none; 
+}
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a, a:active, a:focus{
+
+    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
+
+}
+
+div > a:hover{
+    color: black;
+    text-decoration: none;
+}
+input, textarea{
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+}
+h2
+{
+    text-align: center;
+}
+@font-face{
+    font-family: "main";
+    src: url("assets/fonts/11.otf");
+}
+
+*{
+    font-size: 0.98em;
+    font-family: 'main';
+}
+p{
+    margin-top: unset;
+}
+a:hover{
+    color: white;
+}
+input, textarea{
+    outline: 0;
+    box-shadow: none!important;
+}
 .jumbotron {
     height: 350px;
     background-color:transparent; 
@@ -23,32 +68,6 @@ body{
     height: auto;
     margin-right: 10px;
 }
-
-ul{
-    list-style-type:none; 
-}
-
-a{
-    color: black;
-    text-decoration: none;
-}
-
-a, a:active, a:focus{
-
-    outline: none; /* Works in Firefox, Chrome, IE8 and above */ 
-
-}
-
-div > a:hover{
-    color: black;
-    text-decoration: none;
-}
-
-input, textarea{
-    border: 1px solid black !important;
-    border-radius: 0px !important;
-}
-
 .black-text-hover > a:hover{
     color: black;
 }
@@ -62,27 +81,20 @@ input, textarea{
     padding-bottom: 5px;
     transition: .2s ease-in-out;
 }
-
 .btn-style:hover{
     background-color: black;
     border-color: black;
     color: white;
 }
-
 .container-fluid
 {
     background-color:#52555D;
-
 }
 .lead{
     font-style: italic;
     text-align: center;
 }
 .display-4
-{
-    text-align: center;
-}
-h2
 {
     text-align: center;
 }
@@ -98,29 +110,10 @@ h2
     text-align: center;
     font-size: 36px;
 }
-
-
-
-@font-face{
-    font-family: "main";
-    src: url("assets/fonts/11.otf");
-}
-
-*{
-    font-size: 0.98em;
-    font-family: 'main';
-}
-
-
 .topsell-card-margin{
     margin-left: 25px !important;
     margin-right: 25px !important;
 }
-
-p{
-    margin-top: unset;
-}
-
 .card-border-c{
     border: 1px solid black;
 }
@@ -261,7 +254,7 @@ p{
 }
 
 .btn-modal{
-   float: right; 
+ float: right; 
 }
 
 .modal-style{
@@ -270,9 +263,6 @@ p{
 }
 .container-fluid{
     background-color: black;
-}
-a:hover{
-    color: white;
 }
 .dropdown-menu{
     background-color: black;
@@ -325,12 +315,6 @@ a:hover{
     outline: 0;
     box-shadow: none!important;
 }
-
-input, textarea{
-    outline: 0;
-    box-shadow: none!important;
-}
-
 .modal-header-style{
     border-bottom: 1px solid black;
 }
