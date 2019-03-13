@@ -13,62 +13,9 @@
 </head>
 <body>
 
-	<!--Nav Bar-->
+<! --Navbar -->
 
-	<section class="container-fluid">
-		<nav class="navbar navbar-expand-lg">
-			<img class="img-logo-resize" src="assets/logo.png">
-			<a class="navbar-brand color-navbar ml-3" href="#">Phone Bazar</a>
-			<button class="navbar-toggler custom-toggler ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div id="navbarNavDropdown" class="navbar-collapse collapse ml-4 pt-1" style="">
-				<div class="row justify-content-between w-100">
-					<div class="col-6">
-						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle color-navbar" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Categories
-								</a>
-								<div class="dropdown-menu nav-dropdown-style" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item color-navbar" href="phoneCase.html">Protections</a>
-									<a class="dropdown-item color-navbar" href="audio.html">Audio & bluetooth</a>
-									<a class="dropdown-item color-navbar" href="page_produit.html">Chargers & batteries</a>
-									<a class="dropdown-item color-navbar" href="accessories.html">Accessories</a>
-								</div>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link color-navbar nav-underline" href="#About_us">About us</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link color-navbar nav-underline" href="#Top_Selling">Top Selling</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link color-navbar nav-underline" href="#Contact">Contact</a>
-							</li>
-
-						</ul>
-					</div>
-					<div class="col-6 pr-0">
-						<ul class="navbar-nav float-right">
-							<li class="nav-item">
-								<a class="nav-link color-navbar mr-3" href="#">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-navbar" href="#">
-									<img class="shop-cart" src="assets/shopping-cart.png" alt="shopping cart">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</section>
+<?php include 'header.php';?>
 
 	<!--Jumbotron-->
 
@@ -90,25 +37,25 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 flex-unset col-lg-4 text-center diamond">
 					<h3 class="cat-titles">phone case</h3>
-					<a href="phoneCase.html"><img class="img-acc-resize" src="assets/cat-1-icon.png" class="align-self-center mr-3">
+					<a href="phoneCase.php"><img class="img-acc-resize align-self-center mr-3" src="assets/cat-1-icon.png" alt="icon">
 					</a>
 				</div> 
 
 				<div class="col-md-6 flex-unset col-lg-4 text-center diamond">
 					<h3 class="cat-titles">charger</h3>
-					<a href="page_produit.html"><img class="img-acc-resize" src="assets/cat-2-icon.png" class="align-self-center mr-3">
+					<a href="page_produit.php"><img class="img-acc-resize align-self-center mr-3" src="assets/cat-2-icon.png" alt="icon">
 					</a>
 				</div> 
 
 				<div class="col-md-6 flex-unset col-lg-4 text-center diamond">
 					<h3 class="cat-titles">audio</h3>
-					<a href="audio.html"><img  class="img-acc-resize" src="assets/cat-3-icon.png" class="align-self-center mr-3">
+					<a href="audio.php"><img class="img-acc-resize align-self-center mr-3" src="assets/cat-3-icon.png" alt="icon">
 					</a>
 				</div>
 
 				<div class="col-md-6 flex-unset col-lg-4 text-center diamond">
 					<h3 class="cat-titles">accessories</h3>
-					<a href="accessories.html"><img  class="img-acc-resize" src="assets/cat-4-icon.png" class="align-self-center mr-3">
+					<a href="accessories.php"><img class="img-acc-resize align-self-center mr-3" src="assets/cat-4-icon.png" alt="icon">
 					</a>
 				</div> 
 			</div>
@@ -119,20 +66,20 @@
 
 	<section id="About_us">
 		<div class="container px-5">
-			<h2 class="title-no-mb font-weight-bold pt-5 mt-5 ---title---"">About Us</h2>
+			<h2 class="title-no-mb font-weight-bold pt-5 mt-5 ---title---">About Us</h2>
 			<div class="row justify-content-center ml-5 mb-4">
 				<div class="col-lg-2 text-center">
 					<img class="logoabt" src="assets/logo_transparent.png" alt="logoabt">
 				</div>
 				<div class="col-lg-10 pt-5">
-					<p> Phone Bazar is a specialist compagny in sales of trend accessories and connected objects.</br>
-					Our mission? To help you find the accessories that best meet your expectations, your needs.</br>
-				Known for the originality of our products as well as the richness of its content,</br> PhoneBazar has become a reference site in the field of mobile accessorist.</br> 
-			By ordering accessories for your mobile from our website, you are sure to buy a quality product.</p></p>
-		</div>
+					<p> Phone Bazar is a specialist compagny in sales of trend accessories and connected objects.<br>
+					Our mission? To help you find the accessories that best meet your expectations, your needs.<br>
+				Known for the originality of our products as well as the richness of its content,<br> PhoneBazar has become a reference site in the field of mobile accessorist.<br>
+			By ordering accessories for your mobile from our website, you are sure to buy a quality product.</p>
 	</div>
-</div>			
-</section> 
+</div>
+		</div>
+</section>
 
 
 <!-- Top Selling -->
@@ -168,9 +115,10 @@
 						<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 					</div>
 				</div>
+                </a>
 			</div>
 			<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
-				<a href="#" data-toggle="modal" data-target="#mod3">
+                <a href="#" data-toggle="modal" data-target="#mod3">
 				<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
 					<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a8.png" alt="Card image cap">
 					<div class="card-block pt-2">
@@ -181,67 +129,12 @@
 						<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 					</div>
 				</div>
+                </a>
 			</div>
 		</div>
 	</div>
 </section>
 
-
-<!--Footer-->
-
-<div class="color-footer mt-5" id="Contact">
-	<div class="container">
-		<div class="row mt-2">
-			<div class="col-md-6 col-lg-6">
-				<div class="row pt-5">
-					<ul>
-						<li class="black-text-hover"><a href="#Home">Home</a></li>
-						<li class="black-text-hover"><a href="#About_us">About us</a></li>
-						<li class="black-text-hover"><a href="#Top_Selling">Top Selling</a></li>
-						<li class="black-text-hover"><a href="#Contact">Contact</a></li>
-						<li class="black-text-hover"><a href="#Legal">Legal mentions</a></li>
-					</ul>
-					<ul>
-						<li class="black-text-hover"><a href="phoneCase.html">phone case</a></li>
-						<li class="black-text-hover"><a href="page_produit.html">charger</a></li>
-						<li class="black-text-hover"><a href="audio.html">audio</a></li>
-						<li class="black-text-hover"><a href="accessories.html">accessories</a></li>							
-					</ul>
-				</div>
-				<div class="media media-card ml-4">
-					<img src="assets/logo_transparent.png" class="align-self-center mr-2 logo_footer" alt="image_telephone">		
-					<div class="media-body mt-4 ml-2">
-						<h5 class="">PHONE BAZAR</h5>
-						<p>1, rue de la paix 75000 Paris</p>
-						<p>01-23-45-7-89</p>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-6">	
-				<div class="well well-sm">
-					<form class="form-horizontal" action="" method="post">
-						<fieldset>
-							<legend class="text-center">Contact us</legend>
-							<div class="form-group">
-								<label for="email">Email</label>
-								<input id="email" name="email" type="text" placeholder="" class="form-control">
-							</div>
-							<div class="form-group">
-								<label for="message">Message</label>
-								<textarea class="form-control" id="message" name="message" placeholder="" rows="2"></textarea>
-							</div>
-							<div class="form-group">
-								<div>
-									<button type="submit" class="btn btn-style">Submit</button>
-								</div>
-							</div>
-						</fieldset>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
 
 <div class="modal fade" id="mod1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog" role="document">
@@ -364,6 +257,8 @@
 	</div>
 </div>
 
+<!--Footer-->
+<?php include 'footer.php';?>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

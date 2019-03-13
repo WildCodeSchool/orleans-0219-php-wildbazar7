@@ -1,77 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Accessories</title>
+	<title>Page Produit</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css" crossorigin="anonymous">
 </head>
 <body>
-	<section class="container-fluid">
-		<nav class="navbar navbar-expand-lg">
-			<img class="img-logo-resize" src="assets/logo.png">
-			<a class="navbar-brand color-navbar ml-3" href="index.html">Phone Bazar</a>
-			<button class="navbar-toggler custom-toggler ml-auto collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+<!--Navbar -->
 
-			<div id="navbarNavDropdown" class="navbar-collapse collapse ml-4 pt-1" style="">
-				<div class="row justify-content-between w-100">
-					<div class="col-6">
-						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a id="navbarDropdownMenuLink" class="nav-link dropdown-toggle color-navbar" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Categories
-								</a>
-								<div class="dropdown-menu nav-dropdown-style" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item color-navbar" href="phoneCase.html">Phone cases</a>
-									<a class="dropdown-item color-navbar" href="audio.html">Audio & bluetooth</a>
-									<a class="dropdown-item color-navbar" href="page_produit.html">Chargers & batteries</a>
-									<a class="dropdown-item color-navbar" href="accessories.html">Accessories</a>
-								</div>
-							</li>
+<?php include 'header.php' ?>
 
-							<li class="nav-item">
-								<a class="nav-link color-navbar" href="index.html#About_us">About us</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link color-navbar" href="index.html#Top_Selling">Top Selling</a>
-							</li>
-
-							<li class="nav-item">
-								<a class="nav-link color-navbar" href="index.html#Contact">Contact</a>
-							</li>
-						</ul>
-					</div>
-					<div class="col-6 pr-0">
-						<ul class="navbar-nav float-right">
-							<li class="nav-item">
-								<a class="nav-link color-navbar mr-3" href="#">Login</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link color-navbar" href="#">
-									<img class="shop-cart" src="assets/shopping-cart.png" alt="shopping cart">
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-	</section>
+<section>
 		<div class="container">
-			<h2 class="font-weight-bold my-5 ---title--- cat-title mx-auto">Accessories</h2>
+			<h2 class="font-weight-bold my-5 ---title--- cat-title mx-auto">Charger</h2>
 			<div class="container">
 				<div class="row justify-content-center">
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod1">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a1.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur4.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Screen Protector</h4>
+									<h4 class="card-title">Belkin BOOST Wireless Charging</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">20$</p></span>
+									<span><p class="card-text text-price mr-0">100$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -80,12 +33,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod2">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a2.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur1.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Screen Protector</h4>
+									<h4 class="card-title">Smart Battery Case pour iPhone XS Max</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">20$</p></span>
+									<span><p class="card-text text-price mr-0">67$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -94,12 +47,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod3">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a3.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur3.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Screen Protector</h4>
+									<h4 class="card-title">Neat</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">20$</p></span>
+									<span><p class="card-text text-price mr-0">97$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -108,12 +61,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod4">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a4.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur2.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Screen Protector</h4>
+									<h4 class="card-title">Mophie wireless charging base</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">20$</p></span>
+									<span><p class="card-text text-price mr-0">45$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -122,12 +75,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod5">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a5.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur5.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Car accessory</h4>
+									<h4 class="card-title">Belkin Car Charger with Built-in Lightning Cable </h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">55$</p></span>
+									<span><p class="card-text text-price mr-0">93$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -136,9 +89,9 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod6">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a6.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur6.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Car accessory</h4>
+									<h4 class="card-title">Apple Watch Magnetic Charging Dock</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
 									<span><p class="card-text text-price mr-0">55$</p></span>
@@ -150,12 +103,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod7">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a7.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur7.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Car accessory</h4>
+									<h4 class="card-title">Belkin Travel Charge Kit </h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">55$</p></span>
+									<span><p class="card-text text-price mr-0">45$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -164,12 +117,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod8">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a8.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur8.jpeg" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Car accessory</h4>
+									<h4 class="card-title">Logitech Powered</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">55$</p></span>
+									<span><p class="card-text text-price mr-0">65$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -178,12 +131,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod9">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a9.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur10.png" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Memory Card</h4>
+									<h4 class="card-title">Belkin Base</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">70$</p></span>
+									<span><p class="card-text text-price mr-0">78$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -192,12 +145,12 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						<a href="#" data-toggle="modal" data-target="#mod10">
 							<div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/a10.png" alt="Card image cap">
+								<img class="card-img-top img-fluid card-img-wrap mx-auto" src="assets/chargeur11.png" alt="Card image cap">
 								<div class="card-block pt-2">
-									<h4 class="card-title">Memory Card</h4>
+									<h4 class="card-title">Powered Base</h4>
 									<p class="card-text mb-5">This is a longer card with supporting text below as a natural lead-in to</p>
 									<span><p class="card-text text-stock"><small>in stock</small></p></span>
-									<span><p class="card-text text-price mr-0">50$</p></span>
+									<span><p class="card-text text-price mr-0">45$</p></span>
 									<span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
 								</div>
 							</div>
@@ -209,69 +162,16 @@
 	</section>
 
 	<!--Footer-->
-	<div class="color-footer mt-5" id="Contact">
-		<div class="container">
-			<div class="row mt-2">
-				<div class="col-md-6 col-lg-6">
-					<div class="row pt-5">
-						<ul>
-							<li class="black-text-hover"><a href="index.html">Home</a></li>
-							<li class="black-text-hover"><a href="index.html#About_us">About us</a></li>
-							<li class="black-text-hover"><a href="index.html#Top_Selling">Top Selling</a></li>
-							<li class="black-text-hover"><a href="index.html#Contact">Contact</a></li>
-							<li class="black-text-hover"><a href="index.html#Contact">Legal mentions</a></li>
-						</ul>
-						<ul>
-							<li class="black-text-hover"><a href="phoneCase.html">phone case</a></li>
-							<li class="black-text-hover"><a href="page_produit.html">charger</a></li>
-							<li class="black-text-hover"><a href="audio.html">audio</a></li>
-							<li class="black-text-hover"><a href="accessories.html">accessories</a></li>							
-						</ul>
-					</div>
-					<div class="media media-card ml-4">
-						<img src="assets/logo_transparent.png" class="align-self-center mr-2 logo_footer" alt="image_telephone">		
-						<div class="media-body mt-4 ml-2">
-							<h5 class="">PHONE BAZAR</h5>
-							<p>1, rue de la paix 75000 Paris</p>
-							<p>01-23-45-7-89</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-lg-6">	
-					<div class="well well-sm">
-						<form class="form-horizontal" action="" method="post">
-							<fieldset>
-								<legend class="text-center">Contact us</legend>
-								<div class="form-group">
-									<label for="email">Email</label>
-									<input id="email" name="email" type="text" placeholder="" class="form-control">
-								</div>
-								<div class="form-group">
-									<label for="message">Message</label>
-									<textarea class="form-control" id="message" name="message" placeholder="" rows="2"></textarea>
-								</div>
-								<div class="form-group">
-									<div>
-										<button type="submit" class="btn btn-style">Submit</button>
-									</div>
-								</div>
-							</fieldset>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
+<?php include 'footer.php' ?>
 
-
-	<!-- Modal -->
+<!-- Modal -->
 
 	<div class="modal fade" id="mod10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Micro SD 256go</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Powered Base</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -279,9 +179,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a10.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur11.png" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -292,7 +192,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>50$</p>
+												<p>45$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -311,7 +211,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Micro SD 64go</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Belkin Base</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -319,9 +219,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a9.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur10.png" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -332,7 +232,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>70$</p>
+												<p>78$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -351,7 +251,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Car accessory</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Logitech Powered</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -359,9 +259,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a8.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur8.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -372,7 +272,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>55$</p>
+												<p>65$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -391,7 +291,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Car accessory</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Belkin Travel Charge Kit</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -399,9 +299,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a7.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur7.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -412,7 +312,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>55$</p>
+												<p>45$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -431,7 +331,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Car accessory</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Apple Watch Magnetic Charging Dock</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -439,9 +339,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a6.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur6.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -471,7 +371,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Car accessory</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Belkin Car Charger with Built-in Lightning Cable</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -479,9 +379,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a5.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur5.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -492,7 +392,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>55$</p>
+												<p>93$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -511,7 +411,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Screen Protector</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Mophie wireless charging base</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -519,9 +419,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a4.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur2.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -532,7 +432,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>20$</p>
+												<p>45$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -551,7 +451,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Screen Protector</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Neat</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -559,9 +459,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a3.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur3.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -572,7 +472,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>20$</p>
+												<p>97$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -591,7 +491,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Screen Protector</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Smart Battery Case pour iPhone XS Max</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -599,9 +499,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a2.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur1.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -612,7 +512,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>20$</p>
+												<p>67$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
@@ -631,7 +531,7 @@
 		<div class="modal-dialog" role="document">
 			<div class="modal-content modal-style">
 				<div class="modal-header modal-header-style">
-					<h5 class="modal-title" id="exampleModalLabel">Screen Protector</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Belkin BOOST Wireless Charging</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span class="cross-style" aria-hidden="true">&#10005;</span>
 					</button>
@@ -639,9 +539,9 @@
 				<div class="modal-body">
 					<div class="container-fluid p-0">
 						<div class="row">
-							<div class="col-md-6 p-0">
+							<div class="col-md-6 p-0 bg-pp">
 								<div class="modal-img-wrap">
-									<img class="modal-img" src="assets/a1.png" alt="product image">
+									<img class="modal-img" src="assets/chargeur4.jpeg" alt="product image">
 								</div>
 							</div>
 							<div class="col-md-6 ml-auto p-0">
@@ -652,7 +552,7 @@
 										<br>
 										<div class="row justify-content-center">
 											<div class="col-6">
-												<p>20$</p>
+												<p>100$</p>
 											</div>
 											<div class="col-6">
 												<button class="btn btn-style btn-modal ml-3">Add to cart</button>
