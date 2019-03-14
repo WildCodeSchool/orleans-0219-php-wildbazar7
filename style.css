@@ -331,4 +331,7 @@ input, textarea{
     background-color: white;
 }
 
-
+.modal-description{
+    position: absolute;
+    bottom: 0px;
+}
