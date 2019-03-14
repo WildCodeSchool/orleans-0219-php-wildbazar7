@@ -11,7 +11,7 @@
 
 <?php
 include 'header.php';
-include 'catArray.php';
+include 'phoneCaseArray.php';
 
 ?>
 
@@ -26,7 +26,7 @@ include 'catArray.php';
                             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
 						        <a href="#" data-toggle="modal" data-target=<?php echo '#'.$phoneCaseArray[$x]["modalTarget"] ?>>
 							    <div class="card px-4 pb-1 h-100 card-border-c rounded-0">
-								    <img class="card-img-top img-fluid card-img-wrap mx-auto" src=<?php echo $phoneCaseArray[$x]["image"] ?> alt="Card image cap">
+								    <img class="card-img-top img-fluid card-img-wrap mx-auto" alt="Card_image_cap" src=<?php echo $phoneCaseArray[$x]["image"] ?> >
 								    <div class="card-block pt-2">
 									    <h4 class="card-title"><?php echo $phoneCaseArray[$x]["title"] ?></h4>
 									    <p class="card-text mb-5"><?php echo $phoneCaseArray[$x]["description"] ?></p>
@@ -53,7 +53,7 @@ include 'catArray.php';
                                             <div class="row">
                                                 <div class="col-md-6 p-0">
                                                     <div class="modal-img-wrap">
-                                                        <img class="modal-img" src=<?php echo $phoneCaseArray[$x]["image"] ?> alt="product image">
+                                                        <img class="modal-img" alt="product image" src=<?php echo $phoneCaseArray[$x]["image"] ?>>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 ml-auto p-0">
