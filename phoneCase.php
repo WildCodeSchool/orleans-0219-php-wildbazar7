@@ -19,7 +19,6 @@ include 'phoneCaseArray.php';
 <section id="phonecases">
     <div class="container">
         <a href="admin.php">
-            <button>Add</button>
         </a>
         <h2 class="font-weight-bold my-5 ---title--- cat-title mx-auto">phone case</h2>
         <div class="text-center pb-5">
