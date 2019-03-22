@@ -14,13 +14,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $maxLenDescLong = 5000;
 
     if (strlen($validation['product_title']) > $maxLenTitle) {
-        $errors['product_title'] = 'cannot go above' . $maxLenTitle . ' char';
+        $errors['product_title'] = 'cannot go above ' . $maxLenTitle . ' char';
     }
-    if (strlen($validation['product_descriptionShort']) == $maxLenDescShort) {
-        $errors['product_descriptionShort'] = 'cannot go above' . $maxLenDescShort . ' char';
+    if (strlen($validation['product_descriptionShort']) > $maxLenDescShort) {
+        $errors['product_descriptionShort'] = 'cannot go above ' . $maxLenDescShort . ' char';
     }
-    if (strlen($validation['product_descriptionLong']) == $maxLenDescLong) {
-        $errors['product_descriptionShort'] = 'cannot go above' . $maxLenDescLong . ' char';
+    if (strlen($validation['product_descriptionLong']) > $maxLenDescLong) {
+        $errors['product_descriptionLong'] = 'cannot go above ' . $maxLenDescLong . ' char';
+    }
+    if (strlen($validation['product_image']) > $maxLenTitle) {
+        $errors['product_image'] = 'cannot go above ' . $maxLenTitle . ' char';
     }
 
     if (strlen($validation['product_title']) == 0) {
@@ -47,6 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         header('location:success.php');
         exit();
     }
+
 
 }
 ?>
@@ -85,7 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-5">
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Image</label>
-                        <input class="form-control" id="imageUrl" name="product_image" rows="1">
+                        <input class="form-control" id="imageUrl" name="product_image" rows="1" value=<?= $validation['product_image'] ?? '' ?>>
                         <small class="text-danger"><?php if (!empty($errors['product_image'])) {
                                 echo $errors['product_image'];
                             } ?></small>
@@ -97,7 +101,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-group">
                         <label for="descShort">Description on product page</label>
                         <textarea class="form-control" id="descShort" name="product_descriptionShort"
-                                  rows="4" value=<?= $validation['product_descriptionShort'] ?? '' ?>></textarea>
+                                  rows="4" ><?= $validation['product_descriptionShort'] ?? '' ?></textarea>
                         <small class="text-danger"><?php if (!empty($errors['product_descriptionShort'])) {
                                 echo $errors['product_descriptionShort'];
                             } ?></small>
@@ -109,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="form-group">
                         <label for="descLong">Description Modal</label>
                         <textarea class="form-control" id="descLong" name="product_descriptionLong" rows="4"
-                                  value=<?= $validation['product_descriptionLong'] ?? '' ?>></textarea>
+                                  ><?= $validation['product_descriptionLong'] ?? '' ?></textarea>
                         <small class="text-danger"><?php if (!empty($errors['product_descriptionLong'])) {
                                 echo $errors['product_descriptionLong'];
                             } ?></small>
