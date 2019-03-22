@@ -15,7 +15,7 @@
 <section>
     <div class="container">
         <div class="pb-5 mt-5">
-            <h2>Your card was created.</h2>
+            <h2>Your product has been submitted.</h2>
         </div>
         <div class="text-center pb-5">
             <a class="row justify-content-center" href="index.php">
@@ -24,7 +24,7 @@
         </div>
         <div class="text-center pb-5">
             <a class="row justify-content-center" href="admin.php">
-                <button class="btn btn-style btn-modal">Add another card</button>
+                <button class="btn btn-style btn-modal">Add another product</button>
             </a>
         </div>
         <div class="blanc"></div>

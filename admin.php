@@ -66,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 </head>
 <body>
 <!-- Navbar -->
-
+<link rel="icon" href="assets/logo_transparent.png" />
 <?php include 'header.php' ?>
 
 <section>
