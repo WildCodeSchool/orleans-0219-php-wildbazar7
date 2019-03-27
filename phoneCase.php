@@ -12,6 +12,7 @@
 <?php
 include 'header.php';
 include 'phoneCaseArray.php';
+require 'connec.php';
 
 ?>
 

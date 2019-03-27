@@ -1,5 +1,7 @@
 <?php
 
+require 'connec.php';
+
 $validations = array_map(function() {return false;}, $_POST);
 
 
@@ -15,6 +17,7 @@ var_dump($validations);
 if(count(array_unique($validations)) === 1 && end($validations) === true && is_numeric($_POST['product_price'])) {
     header('Location: success.php');
 }
+
 
 
 ?>

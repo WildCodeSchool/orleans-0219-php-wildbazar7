@@ -15,7 +15,17 @@
 
 <! --Navbar -->
 
-<?php include 'header.php';?>
+<?php
+include 'header.php';
+require 'connec.php';
+
+$pdo = new PDO(DSN, USER, PW);
+$query = "SELECT * FROM phone_case";
+$statement = $pdo->query($query);
+$articles = $statement->fetchAll(PDO::FETCH_ASSOC);
+echo $articles;
+
+?>
 
 	<!--Jumbotron-->
 
