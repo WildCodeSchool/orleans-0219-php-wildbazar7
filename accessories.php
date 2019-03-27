@@ -16,7 +16,11 @@
 <section>
     <div class="container">
         <h2 class="font-weight-bold my-5 ---title--- cat-title mx-auto">Accessories</h2>
-        <div class="text-center pb-5"> <button type="button" class="btn btn-dark">Add Product</button> </div>
+        <div class="text-center pb-5">
+            <a class="row justify-content-center" href="admin.php">
+                <button class="btn btn-style btn-modal">Add Product</button>
+            </a>
+        </div>
         <div class="container">
             <div class="row justify-content-center">
 

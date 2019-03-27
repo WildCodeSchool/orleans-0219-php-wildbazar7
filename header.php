@@ -1,5 +1,6 @@
 <!--Nav Bar-->
 <header>
+    <link rel="icon" href="assets/logo_transparent.png" />
     <section class="container-fluid">
         <nav class="navbar navbar-expand-lg">
             <img class="img-logo-resize" src="assets/logo.png" alt="logo_Phone_bazar">

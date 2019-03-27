@@ -18,7 +18,8 @@
                     </ul>
                 </div>
                 <div class="media media-card ml-4">
-                    <img src="assets/logo_transparent.png" class="align-self-center mr-2 logo_footer" alt="image_telephone">
+                    <img src="assets/logo_transparent.png" class="align-self-center mr-2 logo_footer"
+                         alt="image_telephone">
                     <div class="media-body mt-4 ml-2">
                         <h5 class="">PHONE BAZAR</h5>
                         <p>1, rue de la paix 75000 Paris</p>
@@ -37,7 +38,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" id="message" name="message" placeholder="" rows="2"></textarea>
+                                <textarea class="form-control" id="message" name="message" placeholder=""
+                                          rows="2"></textarea>
                             </div>
                             <div class="form-group">
                                 <div>
@@ -46,6 +48,7 @@
                             </div>
                         </fieldset>
                     </form>
+
                 </div>
             </div>
         </div>
