@@ -23,7 +23,6 @@ $pdo = new PDO(DSN, USER, PW);
 $query = "SELECT * FROM phone_case";
 $statement = $pdo->query($query);
 $articles = $statement->fetchAll(PDO::FETCH_ASSOC);
-echo $articles;
 
 ?>
 

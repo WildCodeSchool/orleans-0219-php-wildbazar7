@@ -15,7 +15,13 @@ include 'header.php';
 include 'phoneCaseArray.php';
 require 'connec.php';
 
+$pdo = new PDO(DSN, USER, PW);
+$query = "SELECT * FROM phone_case";
+$statement = $pdo->query($query);
+$articles = $statement->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
+
 
 <section id="phonecases">
     <div class="container">
@@ -30,19 +36,19 @@ require 'connec.php';
         <div class="container">
             <div class="row justify-content-center">
 
-                <?php for ($x = 0; $x < count($phoneCaseArray); $x++) { ?>
+                <?php for ($x = 0; $x < count($articles); $x++) { ?>
 
                     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 py-2">
                         <a href="#" data-toggle="modal"
-                           data-target=<?php echo '#' . $phoneCaseArray[$x]["modalTarget"] ?>>
+                           data-target=<?php echo '#mod' . $articles[$x]["id"] ?>>
                             <div class="card px-4 pb-1 h-100 card-border-c rounded-0">
                                 <img class="card-img-top img-fluid card-img-wrap mx-auto" alt="Card_image_cap"
-                                     src=<?php echo $phoneCaseArray[$x]["image"] ?>>
+                                     src=<?php echo $articles[$x]["image"] ?>>
                                 <div class="card-block pt-2">
-                                    <h4 class="card-title"><?php echo $phoneCaseArray[$x]["title"] ?></h4>
-                                    <p class="card-text mb-5"><?php echo $phoneCaseArray[$x]["description"] ?></p>
-                                    <span><p class="card-text text-stock"><small><?php echo $phoneCaseArray[$x]["stock"] ?></small></p></span>
-                                    <span><p class="card-text text-price mr-0"><?php echo $phoneCaseArray[$x]["price"] ?></p></span>
+                                    <h4 class="card-title"><?php echo $articles[$x]["title"] ?></h4>
+                                    <p class="card-text mb-5"><?php echo $articles[$x]["description"] ?></p>
+                                    <span><p class="card-text text-stock"><small><?php echo $articles[$x]["stock"] ?></small></p></span>
+                                    <span><p class="card-text text-price mr-0"><?php echo $articles[$x]["price"] ?></p></span>
                                     <span><img class="basket-icon" src="assets/basket.jpg" alt="basket-icon"></span>
                                 </div>
                             </div>
@@ -50,13 +56,13 @@ require 'connec.php';
                     </div>
 
                     <!-- modals -->
-                    <div class="modal fade" id=<?php echo $phoneCaseArray[$x]["modalTarget"] ?> tabindex="-1"
+                    <div class="modal fade" id=<?php echo 'mod'.$articles[$x]["id"] ?> tabindex="-1"
                          role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content modal-style">
                                 <div class="modal-header modal-header-style">
                                     <h5 class="modal-title"
-                                        id="exampleModalLabel"><?php echo $phoneCaseArray[$x]["title"] ?></h5>
+                                        id="exampleModalLabel"><?php echo $articles[$x]["title"] ?></h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span class="cross-style" aria-hidden="true">&#10005;</span>
                                     </button>
@@ -67,18 +73,18 @@ require 'connec.php';
                                             <div class="col-md-6 p-0">
                                                 <div class="modal-img-wrap">
                                                     <img class="modal-img" alt="product image"
-                                                         src=<?php echo $phoneCaseArray[$x]["image"] ?>>
+                                                         src=<?php echo $articles[$x]["image"] ?>>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 ml-auto p-0">
                                                 <div class="modal-text-wrap">
-                                                    <p><?php echo $phoneCaseArray[$x]["descriptionModal"] ?></p>
+                                                    <p><?php echo $articles[$x]["descriptionModal"] ?></p>
                                                     <div class="modal-price-wrap">
-                                                        <p class="text-stock-small"><?php echo $phoneCaseArray[$x]["stock"] ?></p>
+                                                        <p class="text-stock-small"><?php echo $articles[$x]["stock"] ?></p>
                                                         <br>
                                                         <div class="row justify-content-center modal-description">
                                                             <div class="col-3">
-                                                                <p><?php echo $phoneCaseArray[$x]["price"] ?></p>
+                                                                <p><?php echo $articles[$x]["price"] ?></p>
                                                             </div>
                                                             <div class="col-9">
                                                                 <button class="btn btn-style btn-modal ml-3">Add to

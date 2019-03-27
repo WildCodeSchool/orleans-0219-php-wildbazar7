@@ -1,9 +1,14 @@
 <?php
+require 'connec.php';
 
+$pdo = new PDO(DSN, USER, PW);
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $validation = $_POST;
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+var_dump($_POST);
+
+if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $errors = [];
 
@@ -50,10 +55,24 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     if (empty($errors)) {
-        header('location:success.php');
-        exit();
+        try {
+            $query = "INSERT INTO phone_case (title, description, description_modal, price, image, stock) VALUES (:title, :description, :description_modal, :price, :image, :stock)";
+            $statement = $pdo->prepare($query);
+            $statement->bindValue(':title', $_POST['product_title'], PDO::PARAM_STR);
+            $statement->bindValue(':description', $_POST['product_descriptionShort'], PDO::PARAM_STR);
+            $statement->bindValue(':description_modal', $_POST['product_descriptionLong'], PDO::PARAM_STR);
+            $statement->bindValue(':price', $_POST['product_price'], PDO::PARAM_STR);
+            $statement->bindValue(':image', $_POST['product_image'], PDO::PARAM_STR);
+            $statement->bindValue(':stock', $_POST['gridRadiosStock'], PDO::PARAM_STR);
+            $statement->execute();
+            var_dump($statement);
+            header('location:success.php');
+            exit();
+        }
+        catch(PDOException $e){
+            echo $query . "<br>" . $e->getMessage();
+        }
     }
-
 
 }
 
@@ -142,15 +161,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <div class="col-9">
                                 <legend class="col-form-label col-sm-2 pt-0">Stock</legend>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                           value="option1" checked>
+                                    <input class="form-check-input" type="radio" name="gridRadiosStock" id="gridRadios1"
+                                           value="1" checked>
                                     <label class="form-check-label" for="gridRadios1">
                                         In stock
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                           value="option2">
+                                    <input class="form-check-input" type="radio" name="gridRadiosStock" id="gridRadios2"
+                                           value="0">
                                     <label class="form-check-label" for="gridRadios2">
                                         Out stock
                                     </label>
